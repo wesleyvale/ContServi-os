@@ -1,146 +1,146 @@
 body {
-    font-family: Ubuntu;
-    font-style: normal;
-    background-color: #53527c;
+  font-family: Ubuntu;
+  font-style: normal;
+  background-color: #53527c;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    font-family: ubuntu;
-    font-weight: 700;
-    color: #ffffff;
+  margin: 0;
+  font-family: ubuntu;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 p {
-    font-family: ubuntu;
-    color: #ffffff;
+  font-family: ubuntu;
+  color: #ffffff;
 }
 
 .imagem {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .telacadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35%;
 }
-div.inputdata{
-    text-align: center;
-    margin: 20%;
+div.inputdata {
+  text-align: center;
+  margin: 20%;
 }
 
 .button {
-    background-color: #e69d3e;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 6px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    width: 150px;
-    border-radius: 15px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
+  background-color: #e69d3e;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
 }
 
 .button:hover {
-    background-color: #32cdd8;
-    /* Green */
-    color: white;
+  background-color: #32cdd8;
+  /* Green */
+  color: white;
 }
-nav ul{
-    align-content: center;
-    padding-left: 1px;
-} 
+nav ul {
+  align-content: center;
+  padding-left: 1px;
+}
 
 /* Esmanhecer da pagina keyframe */
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 1s ease-in-out;
-    -moz-animation: fadeIn 1s ease-in-out;
-    -o-animation: fadeIn 1s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
+  -webkit-animation: fadeIn 1s ease-in-out;
+  -moz-animation: fadeIn 1s ease-in-out;
+  -o-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
-@media screen and (min-width: 700px) {
-    .telacadastro {
-        background-color:  #47477c;
-        padding: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width:300px;
-        height:600px;
-        border: 10px solid; /* As 4 bordas sólidas com 25px de espessura */
-        border-color: rgb(119, 0, 255) rgb(119, 0, 255)rgb(119, 0, 255) rgb(119, 0, 255);
-        border-radius: 15%;
-        
-    }
-    article.telacadastro{
-        padding-top: 5%;
-    }
-    .lupalinda {
-        margin-left: 25%;
-    }
-    div.inputdata{
-        text-align: left;
-        margin: 20%;
-    }
-    nav ul{
-        padding-left: 5px;
-    } 
+@media screen and (min-width: 470px) {
+  .telacadastro {
+    background-color: #47477c;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 600px;
+    border: 10px solid; /* As 4 bordas sólidas com 25px de espessura */
+    border-color: rgb(119, 0, 255) rgb(119, 0, 255) rgb(119, 0, 255)
+      rgb(119, 0, 255);
+    border-radius: 10%;
+  }
+  article.telacadastro {
+    padding-top: 5%;
+  }
+  .lupalinda {
+    margin-left: 25%;
+  }
+  div.inputdata {
+    text-align: left;
+    margin: 20%;
+  }
+  nav ul {
+    padding-left: 5px;
+  }
 }
