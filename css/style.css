@@ -1,228 +1,238 @@
 /* Geral */
 
 body {
-    font-family: Ubuntu;
-    font-style: normal;
-    background-color: #feffb1
+  font-family: Ubuntu;
+  font-style: normal;
+  background-color: #feffb1;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    font-family: ubuntu;
-    font-weight: 700;
-    color: #ffffff;
-    ;
+  margin: 0;
+  font-family: ubuntu;
+  font-weight: 700;
+  color: #f1a43f;
 }
 
 p {
-    font-family: ubuntu;
+  font-family: ubuntu;
 }
-
 
 /* cabeçalho */
 
 .logo img {
-    border-radius: 5%;
+  border-radius: 5%;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #53527c;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #53527c;
+  padding: 10px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul li {
-    text-align: center;
-    width: 100%;
-    font-size: 1.5em;
-    padding: 2%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  padding: 2%;
 }
 
 nav ul li a {
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .button {
-    background-color: #e69d3e;
-    /* COLOCAR MEDIDAS EM EM, POIS EM PX, OCORRERA TRANSB */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 0.5em;
-    -webkit-transition-duration: 0.4s;
-    /* NAO DEFINI WIDTH PARA MOBILE..LOGO O BOTAO FICARA GRANDE*/
-    transition-duration: 0.4s;
+  background-color: #e69d3e;
+  /* COLOCAR MEDIDAS EM EM, POIS EM PX, OCORRERA TRANSB */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5em;
+  -webkit-transition-duration: 0.4s;
+  /* NAO DEFINI WIDTH PARA MOBILE..LOGO O BOTAO FICARA GRANDE*/
+  transition-duration: 0.4s;
 }
 
 .button:hover {
-    background-color: #32cdd8;
-    /* Green */
-    color: white;
+  background-color: #32cdd8;
+  /* Green */
+  color: white;
 }
 
 .button2 {
-    background-color: #53527c;
-    /* COLOCAR MEDIDAS EM EM, POIS EM PX, OCORRERA TRANSB */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 0.5em;
-    -webkit-transition-duration: 0.4s;
-    /* NAO DEFINI WIDTH PARA MOBILE..LOGO O BOTAO FICARA GRANDE*/
-    transition-duration: 0.4s;
+  background-color: #53527c;
+  /* COLOCAR MEDIDAS EM EM, POIS EM PX, OCORRERA TRANSB */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5em;
+  -webkit-transition-duration: 0.4s;
+  /* NAO DEFINI WIDTH PARA MOBILE..LOGO O BOTAO FICARA GRANDE*/
+  transition-duration: 0.4s;
 }
 
 .button2:hover {
-    background-color: #32cdd8;
-    /* Green */
-    color: white;
+  background-color: #32cdd8;
+  /* Green */
+  color: white;
 }
 
-
-/* header */
+/* header Os slides de fundo sao com a propriedade animation + os key frames*/
 
 header {
-    background-image: url("../imagens/profissoes1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30%;
+  animation: changeBackgroundImage 20s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30%;
+}
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url("https://www.jornalcontabil.com.br/wp-content/uploads/2019/07/masculino-trabalhador-em-uma-fabrica_1303-14306.jpg");
+  }
+  50% {
+    background-image: url("https://image.freepik.com/fotos-gratis/jovem-grupo-de-trabalhadores-industriais_85574-12240.jpg");
+  }
+  100% {
+    background-image: url("https://drd.com.br/wp-content/uploads/2019/05/trabalhador.jpg");
+  }
 }
 
 header p {
-    margin-bottom: 2em;
-    font-size: 1.7em;
+  margin-bottom: 2em;
+  font-size: 1.7em;
 }
 
 .botao {
-    background-color: #e69d3e;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 6px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    width: 150px;
-    border-radius: 15px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
+  background-color: #e69d3e;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
 }
 
 .botao:hover {
-    background-color: #32cdd8;
-    /* Green */
-    color: white;
+  background-color: #32cdd8;
+  /* Green */
+  color: white;
 }
 
 .container {
-    background-image: url("../imagens/profissoes2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30%;
+  background-image: url("../imagens/profissoes2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30%;
 }
-
 
 /* Esmanhecer da pagina keyframe */
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 1s ease-in-out;
-    -moz-animation: fadeIn 1s ease-in-out;
-    -o-animation: fadeIn 1s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
+  -webkit-animation: fadeIn 1s ease-in-out;
+  -moz-animation: fadeIn 1s ease-in-out;
+  -o-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 @media screen and (min-width: 700px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-around;
-        border-radius: 15px;
-    }
-    nav ul {
-        flex-direction: row;
-        width: 60%;
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
-    nav ul li {
-        text-align: center;
-    }
-    header {
-        height: 50px;
-        justify-content: center;
-    }
-    .container {
-        height: 50px;
-        justify-content: center;
-    }
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    /* sticky, tornando o nav fixo */
+    position: sticky;
+    top: 0;
+  }
+  nav ul {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  header {
+    height: 50px;
+    justify-content: center;
+  }
+  .container {
+    height: 50px;
+    justify-content: center;
+  }
 }
