@@ -1,7 +1,10 @@
 body {
   font-family: Ubuntu;
   font-style: normal;
-  background-color: #feffb1;
+
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 h1,
@@ -20,44 +23,49 @@ p {
   color: #ffffff;
 }
 
-.telalogin {
+.topo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 35%;
 }
-.topo {
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: center;
+}
+.corpoTexto {
+  display: flex;
+  flex-direction: column;
+}
+.corpoImagem {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 5%;
+  justify-content: center;
 }
 .input {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.8%;
 }
-
 .button {
-  background-color: #2325b6;
-  /* Green */
+  background-color: #53527c;
+  /* COLOCAR MEDIDAS EM EM, POIS EM PX, OCORRERA TRANSB */
   border: none;
   color: white;
-  padding: 15px 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  width: 150px;
-  border-radius: 15px;
+  border-radius: 0.5em;
+  padding: 15px 6px;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
+  /* NAO DEFINI WIDTH PARA MOBILE..LOGO O BOTAO FICARA GRANDE*/
   transition-duration: 0.4s;
 }
 
@@ -66,8 +74,39 @@ p {
   /* Green */
   color: white;
 }
+.botao {
+  background-color: #e69d3e;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 90px;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.botao:hover {
+  background-color: #32cdd8;
+  /* Green */
+  color: white;
+}
+.cardG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: center;
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
+  display: flex;
   background-color: transparent;
   width: 300px;
   height: 300px;
